@@ -1,0 +1,21 @@
+.degrade {
+    text-transform: uppercase;
+    font-size: 54px;
+    color: var(--mantine-color-blue-7);
+    /* background: linear-gradient(rgba(0,98,133,1) -1.9%, rgba(0,165,198,1) 91.8% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: degrade_animation 5s ease-in-out infinite alternate;    
+    background-size: 500% auto; */
+}
+
+@keyframes degrade_animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
