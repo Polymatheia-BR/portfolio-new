@@ -1,39 +1,38 @@
-import { Burger, Container, Group, Image } from "@mantine/core"
+import { Burger, Button, Container, Group, Image } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
-import classes from "./Header.module.css"
-import Linkedin from "/src/assets/linkedin-plain.svg?react";
-import Github from "/src/assets/github-original.svg?react";
 import Whatsapp from "/src/assets/whatsapp.svg?react";
+
+import "./Header.css"
 
 const links = [
     { link: '/sobre', texto: 'Sobre Mim'},
     { link: '/projetos', texto: 'Projetos'},
-    { link: '/experiencia', texto: 'Experiencia'},
-    { link: '/habilidades', texto: 'Habilidades'}
+    { link: '/habilidades', texto: 'Habilidades'},
+    { link: '/contato', texto: 'Contato'}
 ]
 
 function Header() {
     const [opened, {toggle}] = useDisclosure(false);
 
     return (
-        <header className={classes.header}>
-            <Container size="xl" className={classes.inner}>
+        <header className="header">
+            <Container size="xl" className="inner">
                 <Group gap={6}>
-                    <Image h={40} w="auto" src="/src/assets/terminal.png" />
+                    <Image h={40} w="auto" src="/terminal.png" />
                     <h2>VictorDev</h2>
                 </Group>
 
                 <Group>
                     <Group gap={5} visibleFrom="md">
-                        {links.map((link) => <a key={link.link} className={classes.link} href={link.link}>{link.texto}</a>)}
-                        <a href="/Victor Ferreira França.pdf" target="_blank" className={`${classes.link} ${classes.cv}`}>Currículo</a>
+                        {links.map((link) => <a key={link.link} className="link" href={link.link}>{link.texto}</a>)}                        
+                        <Button size="xs" onClick={() => window.open("/Victor Ferreira França.pdf")}>Currículo</Button>
                     </Group>                    
-                    <div className={classes.divider}></div>
-                    <Image h={30} w="auto" src="/src/assets/language-icon.png" />
-                    <div className={classes.divider}></div>
-                    <a className={classes.headerIcon} target="_blank" href="https://www.linkedin.com/in/victor-ferreira-franca"><Linkedin className={classes.headerIcon} /></a>
-                    <a className={classes.headerIcon} target="_blank" href="https://github.com/Polymatheia-BR"><Github className={classes.headerIcon} /></a>
-                    <a className={classes.headerIcon} target="_blank" href="https://wa.me/5581984613388"><Whatsapp className={classes.headerIcon} /></a>
+                    <div className="divider"></div>
+                    <Image h={24} w="auto"  src="language-svgrepo-com.svg" />
+                    <div className="divider"></div>
+                    <i className="devicon-linkedin-plain headerIcon" onClick={() => window.open("https://www.linkedin.com/in/victor-ferreira-franca/")} />
+                    <i className="devicon-github-original headerIcon" onClick={() => window.open("https://github.com/Polymatheia-BR")} />
+                    <Whatsapp onClick={() => window.open("https://wa.me/5581984613388")} className="headerIcon"/>
                 </Group>
                 <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="sm" />
             </Container>

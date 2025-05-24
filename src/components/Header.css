@@ -36,6 +36,7 @@
 .headerIcon {
   width: 24px;
   height: 24px;
+  font-size: 24px;
   fill: var(--mantine-color-dark-0); 
   transition-duration: 500ms;
   
@@ -43,13 +44,4 @@
     cursor: pointer;
     fill: var(--mantine-color-white)
   }
-}
-.cv {
-  background-color: var(--mantine-color-blue-filled);
-  color: var(--mantine-color-white) !important;
-}
-
-.cv:hover {
-  background-color: var(--mantine-color-blue-7) !important;
-  cursor: pointer;
 }
