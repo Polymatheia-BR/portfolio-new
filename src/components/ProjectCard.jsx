@@ -1,6 +1,6 @@
 import { Badge, Button, Card, Group, Image, Stack, Text } from "@mantine/core";
 
-export default function ProjectCard({nomeProjeto, urlProjeto, urlImagem = "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png", descProjeto, catProjeto = "Fullstack"}) {
+export default function ProjectCard({nomeProjeto, urlProjeto, urlCodigo, urlImagem = "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png", descProjeto, catProjeto = "Fullstack"}) {
     return (
         <Card shadow="md" padding="lg" radius="md" withBorder w="400" h="430">
             <Card.Section>
@@ -22,10 +22,10 @@ export default function ProjectCard({nomeProjeto, urlProjeto, urlImagem = "https
                 </Text>
 
                 <Group grow>
-                    <Button color="blue" mt="md" radius="md" component="a" href="http://www.google.com.br">
+                    <Button color="blue" mt="md" radius="md" component="a" href={urlProjeto}>
                         Acessar Projeto
                     </Button>
-                    <Button color="cyan" mt="md" radius="md" component="a" href="http://www.google.com.br">
+                    <Button color="cyan" mt="md" radius="md" component="a" href={urlCodigo}>
                         Ver código-fonte
                     </Button>
                 </Group>

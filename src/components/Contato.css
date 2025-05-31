@@ -1,0 +1,9 @@
+.degrade-bg {
+    background: linear-gradient(rgba(0,98,133,1) -1.9%, rgba(0,165,198,1) 91.8%);
+    color: #DFDFDF;
+}
+
+#divider {
+    height: 200px;
+    border-right: 1px solid white;
+}

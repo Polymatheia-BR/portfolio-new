@@ -4,7 +4,3 @@
     font-family: "Poppins", sans-serif;
 
 }
-
-.underlineText {
-    text-decoration: underline solid var(--mantine-color-blue-7);
-}

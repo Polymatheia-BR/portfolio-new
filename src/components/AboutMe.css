@@ -1,8 +1,0 @@
-.cardIcon {
-    width: 20px;
-    height: fit-content;
-}
-
-.cardIcon g {
-    fill: var(--mantine-color-blue-9);
-}

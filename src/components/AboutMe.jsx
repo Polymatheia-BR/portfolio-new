@@ -1,17 +1,21 @@
-import { Card, Group, Text, Title } from "@mantine/core";
-import DocIcon from "/src/assets/document.svg?react";
-import "./AboutMe.css";
+import { Card, Group, Image, Text, Title } from "@mantine/core";
+import { motion } from "motion/react";
 
 export default function AboutMe() {
     return (
-        <>
-            <Title className="degrade">Sobre mim</Title>
+        <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true}}
+        >
+            <Title className="degrade" id="aboutMe">Sobre mim</Title>
             <Text maw="800px" mb={30} c="dimmed" >Sou um desenvolvedor e analista formado em analise e desenvolvimento de sistemas, sempre priorizo a colaboração com o cliente e uma comunicação aberta. Estou constantemente explorando novas tecnologias, buscando inovação e significado em cada linha de código.</Text>
             <Group>
                 <Card withBorder w={370} mih={170}>
                     <Card.Section withBorder inheritPadding py={10} px={20}>
                         <Group gap={2}>
-                            <DocIcon className="cardIcon" />
+                            <Image w={20} src="/src/assets/document.svg?react" />
                             <Text fw={500}>Educação</Text>
                         </Group>
                     </Card.Section>
@@ -25,7 +29,7 @@ export default function AboutMe() {
                 <Card withBorder w={370} mih={170}>
                     <Card.Section withBorder inheritPadding py={10} px={20}>
                         <Group gap={2}>
-                            <DocIcon className="cardIcon" />
+                            <Image w={20} src="/src/assets/document.svg?react" />
                             <Text fw={500}>Experiencia Profissional</Text>
                         </Group>
                     </Card.Section>
@@ -36,6 +40,6 @@ export default function AboutMe() {
                 </Card>
 
             </Group>
-        </>
+        </motion.div>
     )
 }

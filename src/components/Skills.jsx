@@ -1,13 +1,19 @@
 import { Flex, Group, SimpleGrid, Text, Title } from "@mantine/core";
 import './Skills.css'
+import { motion } from "motion/react";
 
 export default function Skills() {
     return (
-        <>
-            <Title mt={200} w="fit-content" className="degrade" >HABILIDADES</Title>
+        <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true}}
+        >
+            <Title id="habilidades" mt={200} className="degrade" >HABILIDADES</Title>
 
             <Flex my={20} mb={130} justify="space-between" className="iconBlock">
-                <Title>FRONTEND</Title>
+                <Title c="var(--mantine-color-blue-7)">FRONTEND</Title>
                 <SimpleGrid cols={3}>
                     <Group gap="xs">
                         <i className="devicon-react-original"></i>
@@ -33,7 +39,7 @@ export default function Skills() {
             </Flex>
 
             <Flex my={130} justify="space-between" className="iconBlock">
-                <Title>BACKEND</Title>
+                <Title c="var(--mantine-color-blue-7)">BACKEND</Title>
                 <SimpleGrid cols={3}>
                     <Group>
                         <i className="devicon-java-plain"></i>
@@ -63,7 +69,7 @@ export default function Skills() {
             </Flex>     
 
             <Flex my={130} justify="space-between" className="iconBlock">
-                <Title>FERRAMENTAS</Title>
+                <Title c="var(--mantine-color-blue-7)">FERRAMENTAS</Title>
                 <SimpleGrid cols={3}>
                     <Group>                        
                         <i className="devicon-linux-plain"></i>          
@@ -83,6 +89,6 @@ export default function Skills() {
                     </Group>                
                 </SimpleGrid>
             </Flex>
-        </>
+        </motion.div>
     )
 }
