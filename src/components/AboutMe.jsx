@@ -15,7 +15,7 @@ export default function AboutMe() {
                 <Card withBorder w={370} mih={170}>
                     <Card.Section withBorder inheritPadding py={10} px={20}>
                         <Group gap={2}>
-                            <Image w={20} src="/src/assets/document.svg?react" />
+                            <Image w={20} src="/document.svg?react" />
                             <Text fw={500}>Educação</Text>
                         </Group>
                     </Card.Section>
@@ -29,7 +29,7 @@ export default function AboutMe() {
                 <Card withBorder w={370} mih={170}>
                     <Card.Section withBorder inheritPadding py={10} px={20}>
                         <Group gap={2}>
-                            <Image w={20} src="/src/assets/document.svg?react" />
+                            <Image w={20} src="/document.svg?react" />
                             <Text fw={500}>Experiencia Profissional</Text>
                         </Group>
                     </Card.Section>

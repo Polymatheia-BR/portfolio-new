@@ -23,11 +23,11 @@ export default function Contato() {
                     <div id="divider"></div>
                     <Stack>
                         <Flex gap={3} align="center">
-                            <Image opacity={0.5} h={22} w={22} src="/src/assets/email.svg?react" />
+                            <Image opacity={0.5} h={22} w={22} src="/email.svg?react" />
                             <Text size="xl" fs="italic" td="underline" fw={700}>victorferreira8613@gmail.com</Text>
                         </Flex>
                         <Flex gap={3} align="center">
-                            <Image opacity={0.7} src="/src/assets/whatsapp.svg?react" h={22} w={22} />
+                            <Image opacity={0.7} src="/whatsapp.svg?react" h={22} w={22} />
                             <Text size="xl" fs="italic" fw={700} onClick={() => window.open("https://wa.me/5581984613388")} style={{cursor: "pointer"}}>(81) 9.8461-3388</Text>
                         </Flex>
                     </Stack>

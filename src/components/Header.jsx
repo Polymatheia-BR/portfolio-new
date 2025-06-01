@@ -32,7 +32,7 @@ function Header() {
                     <div className="divider"></div>
                     <i className="devicon-linkedin-plain headerIcon" onClick={() => window.open("https://www.linkedin.com/in/victor-ferreira-franca/")} />
                     <i className="devicon-github-original headerIcon" onClick={() => window.open("https://github.com/Polymatheia-BR")} />                
-                    <Image className="headerIcon" w={24} src="/src/assets/whatsapp.svg?react" />
+                    <Image className="headerIcon" w={24} src="/whatsapp.svg?react" />
                 </Group>
                 <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="sm" />
             </Container>
