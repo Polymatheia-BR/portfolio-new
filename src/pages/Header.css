@@ -37,15 +37,16 @@
   height: 25px;
 }
 
-.headerIcon {
+.headerIcon {  
   width: 24px;
-  height: 24px;
+  height: auto;
   font-size: 24px;
-  fill: var(--mantine-color-dark-0); 
   transition-duration: 500ms;
+  fill: var(--mantine-color-dark-1);
   
   @mixin hover {
     cursor: pointer;
-    fill: var(--mantine-color-white)
+    color: var(--mantine-color-white);
+    fill: var(--mantine-color-white);
   }
 }

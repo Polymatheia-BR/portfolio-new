@@ -4,12 +4,12 @@ import '@mantine/notifications/styles.css';
 import '@mantine/core/styles.css';
 
 
-import Header from './components/Header'
-import MainBody from './components/MainBody';
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contato from './components/Contato';
+import Header from './pages/Header';
+import MainBody from './pages/MainBody';
+import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+import Contato from './pages/Contato';
 
 import './App.css'
 

@@ -4,6 +4,8 @@ import { useDisclosure } from "@mantine/hooks"
 
 import "./Header.css"
 
+import Whatsapp from "/src/assets/whatsapp.svg?react";
+
 const links = [
     { link: '#aboutMe', texto: 'Sobre Mim'},
     { link: '#projetos', texto: 'Projetos'},
@@ -31,8 +33,8 @@ function Header() {
                     <Image h={24} w="auto" src="language-svgrepo-com.svg" onClick={() => notifications.show({ title: "Funcionalidade em desenvolvimento", message: "No momento ainda estamos desenvolvendo essa funcionalidade"})} />
                     <div className="divider"></div>
                     <i className="devicon-linkedin-plain headerIcon" onClick={() => window.open("https://www.linkedin.com/in/victor-ferreira-franca/")} />
-                    <i className="devicon-github-original headerIcon" onClick={() => window.open("https://github.com/Polymatheia-BR")} />                
-                    <Image className="headerIcon" w={24} src="/whatsapp.svg?react" />
+                    <i className="devicon-github-original headerIcon" onClick={() => window.open("https://github.com/Polymatheia-BR")} />                                    
+                    <Whatsapp className="headerIcon" />
                 </Group>
                 <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="sm" />
             </Container>

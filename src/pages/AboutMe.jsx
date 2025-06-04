@@ -5,9 +5,8 @@ export default function AboutMe() {
     return (
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true}}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.2 }}
         >
             <Title className="degrade" id="aboutMe">Sobre mim</Title>
             <Text maw="800px" mb={30} c="dimmed" >Sou um desenvolvedor e analista formado em analise e desenvolvimento de sistemas, sempre priorizo a colaboração com o cliente e uma comunicação aberta. Estou constantemente explorando novas tecnologias, buscando inovação e significado em cada linha de código.</Text>
